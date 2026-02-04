@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <a href="index.php" class="logo">AMVT</a>
+</div>
+
+<div class="container">
+    <h2>Registration</h2>
+
+    <form action="php/register.php" method="POST" enctype="multipart/form-data">
+
+        <input type="text" name="firstname" placeholder="First Name" required>
+        <input type="text" name="lastname" placeholder="Last Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+
+        <input type="text" name="primary_skill" placeholder="Primary Skills" required>
+        <input type="text" name="secondary_skill" placeholder="Secondary Skills" required>
+
+        <label>Upload Photo</label>
+        <input type="file" name="photo" accept="image/*" required>
+
+        <label>Upload Resume</label>
+        <input type="file" name="resume" accept=".pdf,.doc,.docx" required>
+
+        <button type="submit">Register</button>
+    </form>
+</div>
+
+<div class="footer">
+    AMVT Job Portal
+</div>
+
+</body>
+</html>
